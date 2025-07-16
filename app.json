@@ -9,14 +9,28 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to detect your pose for fitness tracking."
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "CAMERA",
+        "CAMERA",
+        "CAMERA"
+      ],
+      "package": "com.anonymous.mobileapp",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +51,16 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "73707c37-9025-4d66-8e83-2e8a4faf30f0"
+      }
+    },
+    "owner": "sheikhahmed123",
+    "updates": {
+      "url": "https://u.expo.dev/73707c37-9025-4d66-8e83-2e8a4faf30f0"
     }
   }
 }
